@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Employment from './Employment';
+import Projects from './Projects';
+import Contact from './Contact';
 
 
 const Navbar = () => {
@@ -20,6 +22,12 @@ const Navbar = () => {
                     <li>
                         <Link to='/employment'>Employment</Link>
                     </li>
+                    <li>
+                        <Link to='/projects'>Projects</Link>
+                    </li>
+                    <li>
+                        <Link to='/contact'>Contact</Link>
+                    </li>
                 </ul>
 
                 <Switch>
@@ -31,6 +39,12 @@ const Navbar = () => {
                     </Route>
                     <Route path='/employment'>
                         <Employment />
+                    </Route>
+                    <Route path='/projects'>
+                        <Projects />
+                    </Route>
+                    <Route path='/contact'>
+                        <Contact />
                     </Route>
                 </Switch>
             </div>
