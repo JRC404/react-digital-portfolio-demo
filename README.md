@@ -5,3 +5,5 @@ Starting projects can be really tough, hopefully this will help you with the ide
 I'll be updating it with differnt features from react as we cover them.
 
 - [x] React Router
+- [ ] Props
+- [ ] State
