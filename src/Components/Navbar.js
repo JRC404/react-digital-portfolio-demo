@@ -3,6 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Employment from './Employment';
+
 
 const Navbar = () => {
     return (
@@ -15,6 +17,9 @@ const Navbar = () => {
                     <li>
                         <Link to='/about'>About</Link>
                     </li>
+                    <li>
+                        <Link to='/employment'>Employment</Link>
+                    </li>
                 </ul>
 
                 <Switch>
@@ -23,6 +28,9 @@ const Navbar = () => {
                     </Route>
                     <Route path='/about'>
                         <About />
+                    </Route>
+                    <Route path='/employment'>
+                        <Employment />
                     </Route>
                 </Switch>
             </div>
