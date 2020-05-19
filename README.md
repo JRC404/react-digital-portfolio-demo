@@ -43,3 +43,55 @@ return (
   </Router>
 );
 ```
+
+5. Notice that we don't have a 'Home' component. Let's create that now!
+
+```javascript
+import React from 'react';
+
+const Home = () => {
+  return (
+    <div>
+      <h1>Hello, Home.</h1>
+    </div>
+  );
+};
+
+export default Home;
+```
+
+That should solve our issue of Home is not defined.
+
+6. Let's do the same for our next component: _About_
+
+```javascript
+import React from 'react';
+
+const About = () => {
+  return (
+    <div>
+      <h1>Hello, About.</h1>
+    </div>
+  );
+};
+
+export default About;
+```
+
+7. We now need to modify our Navbar.js to accomodate the new link:
+
+```javascript
+// we have created a new component and exported it. We need to ensure we now import it too.
+import About from './About';
+
+// Now, let's modify the navbar itself. Pay close attention to how we create Home and see if you can replicate it.
+<li>
+  <Link to='/about'>About</Link>
+</li>
+// hi there, make sure you focus on where you are putting these.
+<Route path='/about'>
+  <About />
+</Route>
+
+// I don't want to give too much away here...
+```
