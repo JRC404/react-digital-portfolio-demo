@@ -8,9 +8,13 @@ I'll be updating it with differnt features from react as we cover them.
 - [ ] Props
 - [ ] State
 
-# Process
+# Steps to create the site
 
-![Alt Text](./src/site.gif)
+![Demo](./planning/site.gif)
+
+## Our structure
+
+![Structure](./planning/siteTree.jpg)
 
 1. Create a Navbar component and render that in the App.js
 2. Go to https://www.npmjs.com/package/react-router-dom & https://reacttraining.com/react-router/ to advance your research and learning!
@@ -97,3 +101,5 @@ import About from './About';
 
 // I don't want to give too much away here...
 ```
+
+8. Multiple components created: Employment, Projects and Footer. Our footer doesn't need to be in the navigation bar, so we now just need to create
