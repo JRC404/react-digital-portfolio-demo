@@ -102,4 +102,45 @@ import About from './About';
 // I don't want to give too much away here...
 ```
 
-8. Multiple components created: Employment, Projects and Footer. Our footer doesn't need to be in the navigation bar, so we now just need to create
+8. Multiple components created: Employment, Projects and Footer. Our footer doesn't need to be in the navigation bar, so we now just need to create the functional components in our 'Component' folder:
+
+```javascript
+/**
+ * Employment.js
+ */
+import React from 'react';
+
+const Employment = () => {
+  return (
+    <div>
+      <h1>Hello, Employment.</h1>
+    </div>
+  );
+};
+
+export default Employment;
+```
+
+```javascript
+/**
+ * Contact.js
+ */
+import React from 'react';
+
+const Contact = () => {
+  return (
+    <div>
+      <h1>Hello, Contact.</h1>
+      <form>
+        <label>
+          Name:
+          <input type='text' name='name' />
+        </label>
+        <input type='submit' value='Submit' />
+      </form>
+    </div>
+  );
+};
+
+export default Contact;
+```
