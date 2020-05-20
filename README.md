@@ -10,6 +10,8 @@ I'll be updating it with differnt features from react as we cover them.
 
 # Process
 
+![Alt Text](./src/site.gif)
+
 1. Create a Navbar component and render that in the App.js
 2. Go to https://www.npmjs.com/package/react-router-dom & https://reacttraining.com/react-router/ to advance your research and learning!
 3. Install react-router-dom and import it inside of the Navbar.js like so:
